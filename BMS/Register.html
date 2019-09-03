@@ -113,109 +113,119 @@ footer{
  <!--................................................MAIN BODY...................................................--> 
 	<body>
 	<br>
+	<h4 align="center">New User? Register Here/Activate</h4><br>
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-sm-3"></div>
+	<div class="col-sm-4"></div>
 	<div class="col-sm-6">
-	<h4 align="center">New User? Register Here/Activate</h4><br>
+	
 
 		<!--Form Designed for fetching Details From User-->
 		 <form class="form-inline" id="form1" name="form1" method="POST" onsubmit="return validate()">
 				 <div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4" style="padding: 5px">
 						<strong>NAME:</strong>
 					</div>
-				   <div class="col-sm-8">
-				   		<input type="text" name="name"  class="form-control" placeholder="Enter Your Name">
+				   <div class="col-sm-8" style="padding: 5px">
+				   		<input type="text" name="name"  class="form-control" placeholder="Enter Your Name" required="required">
 					</div>
-					<div class="col-sm-4">
-						<strong>CPF:</strong>
+					<div class="col-sm-4" style="padding: 5px">
+						<strong>Email:</strong>
 					</div>
-					<div class="col-sm-8">
-						<input type="text" name="cpf" class="form-control" placeholder="Enter Your CPF ID">
+					<div class="col-sm-8" style="padding: 5px">
+						<input type="email" name="email" class="form-control" placeholder="Enter Your Email" required="required">
 					</div>
-					<div class="col-sm-4">
-						<strong>MAC:</strong>
+					<div class="col-sm-4" style="padding: 5px">
+						<strong>DOB:</strong>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-8" style="padding: 5px">
 
-					<!--Hint Popup For MAC Address appears on Click-->
-						<input type="text" name="mac" id="mac"  class="form-control" placeholder="Enter MAC Address">&nbsp;&nbsp;&nbsp;<div class="popup" onclick="myFunction()">Click for hint!
-  						<span class="popuptext" id="myPopup"> Settings->About Phone->Status->Wifi MAC Address</span>
-    </div>
+					
+						<input type="date" name="date" id="date"  class="form-control" placeholder="Select in dd/mm/yyyy format" required="required">
+  					
+    
 					</div>
-					<div class="col-sm-4">
-						<strong>GROUP :</strong>
+					<div class="col-sm-4" style="padding: 5px">
+						<strong>BRANCH :</strong>
 					</div>
-					<div class="col-sm-8">
-
-					<!--Drop Down Menu For Selecting Your Group-->
-						<select name="group">
-							<option value="NONE">--none--</option>
-							<option value="IMTEG">IMTEG</option>
-							<option value="MM">MM</option>
-							<option value="PROC">PROC</option>
-							<option value="HR">HR</option>
-							<option value="CSSW">CSSW</option>
-							<option value="CSMW">CSMW</option>
-							<option value="GMS">GMS</option>
-							<option value="FIM">FIM</option>
-						</select>
-					</div>
-					<div class="col-sm-4">
-						<strong>TEAM :</strong>
-					</div>
-
-					<div class="col-sm-8">
+					<div class="col-sm-8" style="padding: 5px">
 
 					<!--Drop Down Menu For Selecting Your Group-->
-						<select name="team">
-							<option value="NONE">--none--</option>
-							<option value="NONE">--IMTEG--</option>
-							<option value="WOM">WOM</option>
-							<option value="WOF">WOF</option>
-							<option value="KGPG">KGPG</option>
-							<option value="CAUV">CAUV</option>
-							<option value="AAB">AAB</option>
-							<option value="MBA">MBA</option>
-							<option value="PPG">PPG</option>
-							<option value="SPL">SPL</option>
-							<option value="FB">FB</option>
-							<option value="NONE">--PROC--</option>
-							<option value="OMEGA">OMEGA</option>
-							<option value="CGG">CGG</option>
-							<option value="PDGM">PDGM</option>
-							<option value="GT">GT</option>
+						<select name="ifsc" required="required" >
+							<option value="GB00007">AGRA</option>
+							<option value="GB00006">BHARATPUR</option>
+							<option value="GB00003">CHARKHI DADRI</option>
+							<option value="GB00001">DELHI</option>
+							<option value="GB00004">DHANBAD</option>
+							<option value="GB00002">FARIDABAD</option>
+							
+							
+							<option value="GB00005">JAMSHEDPUR</option>
+							
+						
+							<option value="GB00008">PATNA</option>
+						
 						</select>
 					</div>
+					<div class="col-sm-4" style="padding: 5px">
+						<strong>ACCOUNT TYPE :</strong>
+					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-8" style="padding: 5px">
+
+					<!--Drop Down Menu For Selecting Your Group-->
+						<select name="accType" required="required">
+					
+							<option value="Savings">SAVINGS</option>
+							<option value="Current">CURRENT</option>
+							<option value="Corporate">CORPORATE</option>
+							
+													</select>
+					</div>
+
+					<div class="col-sm-4" style="padding: 5px">
 						<strong>MOBILE NUMBER:</strong>
 					</div>
 
-					<div class="col-sm-8">
-						<input type="text" name="mobile" id="mobile"  class="form-control" placeholder="Enter Mobile number">
+					<div class="col-sm-8" style="padding: 5px">
+						<input type="text" name="mobile" id="mobile"  class="form-control" placeholder="Enter Mobile number" required="required" >
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-4" style="padding: 5px">
 						<strong>CREATE PASSWORD:</strong>
 					</div>
 
 					<!--Enter Desired Password-->
-					<div class="col-sm-8">
-						<input type="password" name="password"  class="form-control" placeholder="Create Your Password">
+					<div class="col-sm-8" style="padding: 5px">
+						<input type="password" name="password"  class="form-control" placeholder="Create Your Password" required="required">
 					</div>
 
 					<!--Confirm Password-->
-					<div class="col-sm-4">
+					<div class="col-sm-4" style="padding: 5px">
 						<strong>CONFIRM PASSWORD:</strong>
 					</div>
-					<div class="col-sm-8">
-						<input type="password" id="p2"  class="form-control" placeholder="Confirm Your Password">
+					<div class="col-sm-8" style="padding: 5px">
+						<input type="password" id="p2"  class="form-control" placeholder="Confirm Your Password" required="required">
 					</div>
-
-					<div class="col-sm-4"></div>
+					
+					<div class="col-sm-4" style="padding: 5px">
+						<strong>ADDRESS:</strong>
+					</div>
+					<div class="col-sm-8" style="padding: 5px">
+					<textarea rows="5" cols="50" name="address" required="required" placeholder="Enter Your Address" required="required"></textarea>
+					</div>	
+					
+								<div class="col-sm-4">
+						<strong>AADHAR NO:</strong>
+					</div>
+					<div class="col-sm-8" style="padding: 5px">
+						<input type="text"  class="form-control" placeholder="Aadhar Number" name="aadhar" maxlength="12" required="required">
+					</div>		
+					
+					<div class="col-sm-2"></div>
 					 <div class="col-sm-8">
+					 		<br>
+					 		
 						<input type="submit" value="REGISTER"class="btn btn-success">
 
 						<!--Reset Button for resetting all entries-->

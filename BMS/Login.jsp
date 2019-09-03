@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!doctype html>
 <html>
 <head>
@@ -131,7 +133,7 @@ to {
 			
 			<div class="col-sm-6">
 			<br>
-				<form action="" class="form-horizontal animate" method="POST"
+				<form action="LoginServlet" class="form-horizontal animate" method="POST"
 					id="form1">
 					<div class="table-responsive">
 						<table class="table borderless">
